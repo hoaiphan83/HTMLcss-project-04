@@ -9,6 +9,12 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  background: #fffaf5;
+}
+
+/*Common*/
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -26,4 +32,58 @@ select,
 button {
   font-size: inherit;
   font-family: inherit;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.btn {
+  --height: 56px;
+  display: inline-block;
+  min-width: 130px;
+  height: var(--height);
+  line-height: var(--height);
+  border: 1px solid rgb(0, 9, 88, 0.7);
+  border-radius: 99px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #000958;
+}
+
+/*Header*/
+.header {
+  padding: 26px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar__list {
+  display: flex;
+}
+
+.navbar__link {
+  padding: 8px 18px;
+  color: #5e6085;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+}
+
+.navbar__link:hover {
+  text-shadow: 1px 0 0 currentColor;
+  color: #000958;
+}
+
+.header-action__btn {
+  --height: 50px;
+  min-width: 118px;
 }
